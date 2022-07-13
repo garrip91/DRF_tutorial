@@ -14,12 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 
-from django.conf.urls import url, include
+from django.conf.urls import include
 from rest_framework import routers
-from tutorial.quickstart import views
+from quickstart import views
 
+
+router = routers.DefaultRouter()
 
 # Привязываем наше API используя автоматическую маршрутизацию, а также подключаем возможность авторизоваться в браузерной версии API:
 router.register(r'users', views.UserViewSet)
@@ -27,8 +29,8 @@ router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
 
-    url(r'^', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    re_path(r'^', include(router.urls)),
+    re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     path('admin/', admin.site.urls),
 ]
