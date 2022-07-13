@@ -16,6 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.conf.urls import url, include
+from rest_framework import routers
+from tutorial.quickstart import views
+
+
+# Привязываем наше API используя автоматическую маршрутизацию, а также подключаем возможность авторизоваться в браузерной версии API:
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
+
 urlpatterns = [
+
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+
     path('admin/', admin.site.urls),
 ]
