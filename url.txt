@@ -1,1 +1,1 @@
-https://ilyachch.gitbook.io/django-rest-framework-russian-documentation/overview/quick-start/request-response
+https://ilyachch.gitbook.io/django-rest-framework-russian-documentation/overview/quick-start/auth-and-perm
