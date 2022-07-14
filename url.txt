@@ -1,1 +1,1 @@
-https://ilyachch.gitbook.io/django-rest-framework-russian-documentation/overview/quick-start
+https://ilyachch.gitbook.io/django-rest-framework-russian-documentation/overview/quick-start/serialization
