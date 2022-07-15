@@ -6,6 +6,8 @@ from snippets.views import SnippetViewSet, UserViewSet
 
 from rest_framework.routers import DefaultRouter
 
+from rest_framework.schemas import get_schema_view
+
 
 # snippet_list = SnippetViewSet.as_view({
     # 'get': 'list',
@@ -35,6 +37,8 @@ router = DefaultRouter()
 router.register(r'snippets', SnippetViewSet)
 router.register(r'users', UserViewSet)
 
+schema_view = get_schema_view(title='Pastebin API')
+
 # URL-адреса API теперь автоматически определяются маршрутизатором (роутером).
 # Кроме того, мы включаем URL-адреса для входа в доступный для просмотра API.
 urlpatterns = [
@@ -44,6 +48,7 @@ urlpatterns = [
     # path('snippets/<int:pk>/highlight/', snippet_highlight, name='snippet-highlight'),
     # path('users/', user_list, name='user-list'),
     # path('users/<int:pk>/', user_detail, name='user-detail'),
+    path('schema/', schema_view),
 ]
 
 # urlpatterns = format_suffix_patterns(urlpatterns)
