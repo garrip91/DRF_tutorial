@@ -1,19 +1,19 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/garrip91/password_generator">
+  <a href="https://github.com/garrip91/DRF_tutorial">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Веб-проект (сервис) "Генератор паролей"</h3>
+  <h3 align="center">Веб-проект для практики с Django REST framework</h3>
 
   <p align="center">
-    Readme веб-проекта (сервиса) "Генератор паролей"
+    Readme веб-проекта для практики с Django REST framework
     <br/>
     <br/>
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/Garrip91/password_generator?color=dark-green) ![Issues](https://img.shields.io/github/issues/Garrip91/password_generator) 
+![Contributors](https://img.shields.io/github/contributors/Garrip91/DRF_tutorial?color=dark-green) ![Issues](https://img.shields.io/github/issues/Garrip91/DRF_tutorial) 
 
 ## Table Of Contents
 
@@ -32,17 +32,11 @@
 
 ![Screen Shot](images/screenshot.png)
 
-Этот проект является сервисом по генерации случайных паролей по 3-м критериям:
-
-
-* Длина пароля (от 6-и до 14-и символов)
-* Будут встречаться латинские буквы в верхнем регистре
-* Будут встречаться числа
-* Будут встречаться специальные символы
+Этот проект предназначен для практики с Django REST framework
 
 ## Built With
 
-Веб-проект (сервис) создан с помощью Python, Django
+Веб-проект создан с помощью Python, Django
 
 ## Getting Started
 
@@ -63,7 +57,7 @@ https://www.python.org/
 1. Clone the repo
 
 ```sh
-git clone https://github.com/garrip91/password_generator
+git clone https://github.com/garrip91/DRF_tutorial
 ```
 
 
@@ -94,7 +88,7 @@ python manage.py runserver
 
 ## Usage
 
-Данный веб-проект (сервис) Вы можете использовать для генерации рандомных паролей длиной от 6-и до 14-и символов, а также содержащих латинские буквы в верхнем регистре, числа и специальные символы
+Данный веб-проект (сервис) Вы можете использовать для практики на Django REST framework
 
 ## Contributing
 
@@ -110,7 +104,7 @@ python manage.py runserver
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/password_generator/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/DRF_tutorial/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
@@ -119,5 +113,5 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/pas
 ## Acknowledgements
 
 * [Garrip91](https://github.com/garrip91)
-* [password_generator](https://github.com/garrip91/password_generator)
+* [DRF_tutorial](https://github.com/garrip91/DRF_tutorial)
 * [Python](https://www.python.org/)
